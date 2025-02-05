@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Realistic Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="music-site">
+    <header class="site-header">
+      <img src="logo.png.jpg" alt="Music Logo" class="site-logo">
+      <h1>MyMusic</h1>
+    </header>
+
+    <div class="music-player">
+      <div class="album-art">
+        <img  src="shapeofyou.jpg" alt="Album Art" class="song-logo">
+      </div>
+      <div class="song-info">
+        <h2 id="song-title">Shape of You</h2>
+        <p id="song-artist">Ed Sheeran</p>
+      </div>
+      <audio id="audio"></audio>
+      <div class="controls">
+        <button id="prev" class="control-button">⏮️</button>
+        <button id="play" class="control-button">▶️</button>
+        <button id="next" class="control-button">⏭️</button>
+      </div>
+      <div class="progress-container">
+        <input type="range" id="progress" value="0">
+      </div>
+      <div class="time-info">
+        <span id="current-time">0:00</span> / <span id="duration">0:00</span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
